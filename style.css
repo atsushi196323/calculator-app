@@ -1,0 +1,77 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f3f4f6;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.dark-theme {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-theme #display {
+  background-color: #555;
+  color: #fff;
+}
+
+.dark-theme button {
+  background-color: #444;
+  color: #fff;
+}
+
+.dark-theme button:hover {
+  background-color: #666;
+}
+
+.calculator {
+  width: 300px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.display {
+  background-color: #222;
+  color: #fff;
+  text-align: right;
+  padding: 20px;
+  font-size: 2em;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+}
+
+.btn {
+  padding: 20px;
+  font-size: 1.2em;
+  background-color: #f9f9f9;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn[data-value="="] {
+  background-color: #4caf50;
+  color: white;
+}
+
+.btn[data-value="C"],
+.btn[data-value="AC"] {
+  background-color: #f44336;
+  color: white;
+}
