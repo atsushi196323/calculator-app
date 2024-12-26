@@ -31,7 +31,8 @@ body {
 }
 
 .calculator {
-  width: 300px;
+  width: 90%;
+  max-width: 300px;
   background-color: white;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -42,8 +43,10 @@ body {
   background-color: #222;
   color: #fff;
   text-align: right;
-  padding: 20px;
-  font-size: 2em;
+  padding: 15px;
+  font-size: 1.8em;
+  word-wrap: break-word;
+  min-height: 50px;
 }
 
 .buttons {
@@ -53,7 +56,7 @@ body {
 }
 
 .btn {
-  padding: 20px;
+  padding: 15px;
   font-size: 1.2em;
   background-color: #f9f9f9;
   border: none;
@@ -74,4 +77,17 @@ body {
 .btn[data-value="AC"] {
   background-color: #f44336;
   color: white;
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 600px) {
+  .display {
+    font-size: 1.5em;
+    padding: 10px;
+  }
+
+  .btn {
+    padding: 12px;
+    font-size: 1em;
+  }
 }
